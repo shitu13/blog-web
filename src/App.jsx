@@ -9,6 +9,7 @@ import Login from "./components/Login";
 import Register from "./components/Register";
 import ProtectedRoute from "./components/Protectedroute";
 import PublicRoute from "./components/PublicRoute";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -31,6 +32,8 @@ function App() {
         {/* Fallback */}
         <Route path="*" element={<PublicRoute><Login /></PublicRoute>} />
       </Routes>
+
+      <Footer/>
     </>
   );
 }
