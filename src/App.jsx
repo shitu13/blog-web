@@ -1,28 +1,38 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import { Routes, Route } from 'react-router-dom'
-import Navbar from './components/Navbar'
-import Posts from './components/Posts'
-import PostDetails from './components/PostDetails'
-import CreatePost from './components/CreatePost'
-import EditPost from './components/EditPost'
+import { Routes, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
+import Posts from "./components/Posts";
+import PostDetails from "./components/PostDetails";
+import CreatePost from "./components/CreatePost";
+import EditPost from "./components/EditPost";
+import Profile from "./components/Profile";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import ProtectedRoute from "./components/Protectedroute";
+import PublicRoute from "./components/PublicRoute";
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-    <Navbar/>
-    <Routes>
-      <Route path="/" element={<Posts />} />
-      <Route path="/posts/:id" element={<PostDetails />} />
-      <Route path="/create" element={<CreatePost />} />
-      <Route path="/edit/:id" element={<EditPost />} />
-    </Routes>
+      <Navbar />
+
+      <Routes>
+        {/* Protected routes */}
+        <Route path="/" element={<ProtectedRoute><Posts /></ProtectedRoute>} />
+        <Route path="/posts/:id" element={<ProtectedRoute><PostDetails /></ProtectedRoute>} />
+        <Route path="/create" element={<ProtectedRoute><CreatePost /></ProtectedRoute>} />
+        <Route path="/edit/:id" element={<ProtectedRoute><EditPost /></ProtectedRoute>} />
+        <Route path="/profile" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+        <Route path="/profile/:id" element={<ProtectedRoute><Profile /></ProtectedRoute>} />
+
+        {/* Auth routes */}
+        <Route path="/login" element={<PublicRoute><Login /></PublicRoute>} />
+        <Route path="/register" element={<PublicRoute><Register /></PublicRoute>} />
+
+        {/* Fallback */}
+        <Route path="*" element={<PublicRoute><Login /></PublicRoute>} />
+      </Routes>
     </>
-      
-  )
+  );
 }
 
-export default App
+export default App;

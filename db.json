@@ -1,0 +1,116 @@
+{
+  "users": [
+    {
+      "id": "2fb9",
+      "name": "Md. Shahin",
+      "email": "catam69228@moondyal.com",
+      "password": "123456"
+    },
+    {
+      "id": "5afc",
+      "name": "Ami test",
+      "email": "test@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "3371",
+      "name": "Ali Keton",
+      "email": "test1@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f00a",
+      "name": "Md. Shahin",
+      "email": "shuvankar@gmail.com",
+      "password": "1234567890"
+    },
+    {
+      "id": "711c",
+      "name": "Akib",
+      "email": "akib@gmail.com",
+      "password": "123456"
+    }
+  ],
+  "posts": [
+    {
+      "title": "This is a new post with post title. A",
+      "body": "Printers in the 1500s scrambled the words from Cicero's \"De Finibus Bonorum et Malorum'' after mixing the words in each sentence. The familiar \"lorem ipsum dolor sit amet\" text emerged when 16th-century printers adapted Cicero's original work, beginning with the phrase \"dolor sit amet consectetur.\"\n\nThey abbreviated \"dolorem\" (meaning \"pain\") to \"lorem,\" which carries no meaning in Latin. \"Ipsum\" translates to \"itself,\" and the text frequently includes phrases such as \"consectetur adipiscing elit\" and \"ut labore et dolore.\" These Latin fragments, derived from Cicero's philosophical treatise, were rearranged to create the standard dummy text that has become a fundamental tool in design and typography across generations.\n\nThe short answer is that lorem ipsum text doesn't actually \"say\" anything meaningful. It's deliberately scrambled Latin that doesn't form coherent sentences. While it comes from Cicero's \"De Finibus Bonorum et Malorum,\" the text has been modified so extensively that it's nonsensical.\n\nWhy scrambled text? That's exactly the point. By using text that's unreadable but maintains the general pattern of regular writing — including normal word length, spacing, and punctuation — designers can focus on the visual elements of a layout without the actual content getting in the way. The pseudo-",
+      "userId": "2fb9",
+      "id": "98dc"
+    },
+    {
+      "id": "a091",
+      "title": "Avoiding offensive lorem ipsum content",
+      "body": "Tossing your favorite band or singer's song lyrics into a translator to generate lorem ipsum may sometimes produce offensive content. To avoid this, remove vulgar or explicit words from the original, uncensored lyrics before running them through the translator to create your word bank.\n\nUse the \"find and replace\" feature in your favorite online word-processing program to make this easier. Then, load your cleaned-up sample text into a generic random text generator and set the number of words or lines of necessary placeholder text for your layout.",
+      "userId": "5afc"
+    },
+    {
+      "id": "9b7b",
+      "title": "Corporate ipsum",
+      "body": "If you prefer your incoherence in English, press \"generate!\". You will receive up to 100 paragraphs of the most incomprehensible corporate jargon to ever grace a quarterly report.\n\nNo need to run this industrial disaster through a translator. If you did, the algorithm would run screaming into a corner, rocking and sucking its thumb drive.\n\nTake care, however. Using Corporate Ipsum may backfire. Middle managers with a penchant for using the words \"agile\" and \"disruptive\" in every Zoom meeting might think your dummy text should be this quarter's call to action.",
+      "userId": "5afc"
+    },
+    {
+      "id": "fd2a",
+      "title": "This is new design.",
+      "body": "This is new design content. ",
+      "userId": "5afc"
+    },
+    {
+      "id": "4bb2",
+      "title": "Skate ipsum",
+      "body": "Do you own a skateboard shop selling customized decks? Have you perfected your Ollie and need a place to post your gnarliest face plant? Do you need placeholder text for your upcoming inventory reduction sale on the past year's unsold custom order skateboard designs? Allow Skate Ipsum to provide the sickest coffin ride you've ever taken. Land up to 20 paragraphs, choose a stance: text, HTML, or JSON, and click Shred to generate the filler you need.",
+      "userId": "2fb9"
+    },
+    {
+      "id": "45dc",
+      "title": "dddddddddddddddddddddddd",
+      "body": "ddddddddddddddddddddddddddddd",
+      "userId": "f00a"
+    }
+  ],
+  "comments": [
+    {
+      "id": "1",
+      "postId": "101",
+      "userId": "2fb9",
+      "content": "This is a comment",
+      "createdAt": "2025-11-30T12:00:00.000Z"
+    },
+    {
+      "id": "e687",
+      "postId": "98dc",
+      "userId": "3371",
+      "content": "hello comment",
+      "createdAt": "2025-11-30T09:51:20.768Z"
+    },
+    {
+      "id": "afed",
+      "postId": "98dc",
+      "userId": "3371",
+      "content": "another comment",
+      "createdAt": "2025-11-30T09:53:41.134Z"
+    },
+    {
+      "id": "5a86",
+      "postId": "45dc",
+      "userId": "f00a",
+      "content": "hello",
+      "createdAt": "2025-12-01T06:02:13.553Z"
+    },
+    {
+      "id": "9e94",
+      "postId": null,
+      "userId": "f00a",
+      "content": "this is a test comment. ",
+      "createdAt": "2025-12-01T06:02:38.479Z"
+    },
+    {
+      "id": "0598",
+      "postId": "45dc",
+      "userId": "3371",
+      "content": "this is a test comment. ",
+      "createdAt": "2025-12-01T06:03:32.335Z"
+    }
+  ]
+}
