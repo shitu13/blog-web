@@ -49,7 +49,19 @@ export const updatePost = async (id, postData) => {
 // Delete a post
 export const deletePost = async (id) => {
   try {
-    await axios.delete(`${API}/${id}`);
+    // First, delete all comments associated with this post
+    const commentsRes = await axios.get(`http://localhost:5000/comments?postId=${id}`);
+    const comments = commentsRes.data;
+    
+    // Delete each comment
+    await Promise.all(
+      comments.map(comment => 
+        axios.delete(`http://localhost:5000/comments/${comment.id}`)
+      )
+    );
+    
+    // Then delete the post itself
+    await axios.delete(`http://localhost:5000/posts/${id}`);
   } catch (err) {
     console.error("Failed to delete post:", err);
     throw err;

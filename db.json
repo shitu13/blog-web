@@ -51,12 +51,6 @@
       "userId": "5afc"
     },
     {
-      "id": "fd2a",
-      "title": "This is new design.",
-      "body": "This is new design content. ",
-      "userId": "5afc"
-    },
-    {
       "id": "4bb2",
       "title": "Skate ipsum",
       "body": "Do you own a skateboard shop selling customized decks? Have you perfected your Ollie and need a place to post your gnarliest face plant? Do you need placeholder text for your upcoming inventory reduction sale on the past year's unsold custom order skateboard designs? Allow Skate Ipsum to provide the sickest coffin ride you've ever taken. Land up to 20 paragraphs, choose a stance: text, HTML, or JSON, and click Shred to generate the filler you need.",
@@ -141,6 +135,13 @@
       "userId": "3371",
       "content": "1914 translation by ali keton.\n",
       "createdAt": "2025-12-01T11:53:59.218Z"
+    },
+    {
+      "id": "f580",
+      "postId": "e8fc",
+      "userId": "5afc",
+      "content": "2 comments.",
+      "createdAt": "2025-12-02T06:14:45.161Z"
     }
   ]
 }
